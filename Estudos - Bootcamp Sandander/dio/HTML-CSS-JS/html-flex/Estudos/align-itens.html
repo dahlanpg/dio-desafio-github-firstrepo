@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Itens</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid;
+            max-width: 350px;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .base-line{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Center</h2>
+    <section class="container center">
+        <div class="item">item1</div>
+        <div class="item">lorem ipsum auhsduha</div>
+        <div class="item">item2</div>
+    </section>
+    <h2>Stretch</h2> <!-- cresce de acordo com maior item-->
+    <section class="container stretch">
+        <div class="item">item1</div>
+        <div class="item">lorem ipsum auhsduha</div>
+        <div class="item">item2</div>
+    </section>
+    <h2>Start</h2> <!-- leva para cima -->
+    <section class="container start column">
+        <div class="item">item1</div>
+        <div class="item">lorem ipsum auhsduha</div>
+        <div class="item">item2</div>
+    </section>
+    <h2>End</h2> <!-- leva para baixo-->
+    <section class="container end column">
+        <div class="item">item1</div>
+        <div class="item">lorem ipsum auhsduha</div>
+        <div class="item">item2</div>
+    </section>
+    <h2>Base Line</h2>
+    <section class="container base-line">
+        <div class="item"><br>item1</div>
+        <div class="item">lorem ipsum auhsduha</div>
+        <div class="item">item2</div>
+    </section>
+</body>
+</html>

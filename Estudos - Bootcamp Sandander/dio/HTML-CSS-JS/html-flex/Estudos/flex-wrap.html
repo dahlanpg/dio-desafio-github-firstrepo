@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Wrap</title>
+</head>
+
+<style>
+
+    .flex-container{
+        height: 150px;
+        border: 2px solid;
+        display: flex;
+        flex-direction: row;
+        max-width: 310px;
+    }
+
+    .item{
+        line-height: 50px;
+        font-size: 24px;
+        height: 50%;
+        text-align: center;
+        min-width: 100px;
+    }
+
+    .nowrap{
+        flex-wrap: nowrap;
+    }
+
+    .wrap{
+        flex-wrap: wrap;
+    }
+
+</style>
+
+<body>
+    <h1>Funcionameto Padrao - No Wrap</h1>
+    <div class="flex-container nowrap">
+        <div class="item" style="background-color: red">1</div>
+        <div class="item" style="background-color: green">2</div>
+        <div class="item" style="background-color: blue">3</div>
+        <div class="item" style="background-color: blue">3</div>
+    </div>
+
+    <h1>Funcionameto - Wrap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item" style="background-color: red">1</div>
+        <div class="item" style="background-color: green">2</div>
+        <div class="item" style="background-color: blue">3</div>
+        <div class="item" style="background-color: blue">3</div>
+        <div class="item" style="background-color: blue">3</div>
+        <div class="item" style="background-color: blue">3</div>
+        <div class="item" style="background-color: blue">3</div>
+    </div>
+</body>
+</html>
